@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Clase3.Ejercicio_2
+namespace Clase3.Ejercicios2
 {
-    public class Biblioteca
+    public class BIblioteca: Ibiblioteca
     {
         public List<string> Libros { get; set; }
 
-        public Biblioteca()
+        public BIblioteca()
         {
             Libros = new List<string>()
             {
@@ -27,7 +26,11 @@ namespace Clase3.Ejercicio_2
                 "La sombra del viento"
             };
         }
-        
 
+        public List<string> traerLibros()
+        {
+           return Libros;
+        }
     }
 }
+
